@@ -2,14 +2,26 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Core%20Analysis%20Complete-brightgreen)
 
 Forecasting daily sales across 1,115 Rossmann drug stores using historical panel data, and
 quantifying the impact of promotions and holidays on sales.
 
 **Author:** [Bhargavi Anupati](https://github.com/BhargaviAnupati) · [LinkedIn](https://www.linkedin.com/in/bhargavi-r-9667b4231/)
 
+## Results at a Glance
+
+**XGBoost cut forecast error roughly in half versus the strongest naive baseline**, and running
+a promotion is associated with an estimated **20.8% sales lift**, controlling for store,
+season, and recent sales history.
+
+| Top drivers of predicted sales (SHAP) | Promotion effect on predictions (SHAP) |
+|---|---|
+| ![Feature importance](reports/shap_feature_importance.png) | ![Promo dependence](reports/shap_promo_dependence.png) |
+
+
 ## Table of Contents
+- [Results at a Glance](#results-at-a-glance)
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methods](#methods)
@@ -191,4 +203,4 @@ same-day-last-week baseline — a clear, easily communicated improvement.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
